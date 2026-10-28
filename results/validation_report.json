@@ -1,0 +1,80 @@
+{
+  "dataset": "data\\train.csv",
+  "rows": 159571,
+  "train_rows": 127656,
+  "validation_rows": 31915,
+  "test_size": 0.2,
+  "random_state": 42,
+  "text_column": "comment_text",
+  "label_columns": [
+    "toxic",
+    "severe_toxic",
+    "obscene",
+    "threat",
+    "insult",
+    "identity_hate"
+  ],
+  "metrics": {
+    "toxic": {
+      "precision": 0.6660663750964755,
+      "recall": 0.8471858638743456,
+      "f1-score": 0.7457871237217342,
+      "support": 3056.0
+    },
+    "severe_toxic": {
+      "precision": 0.30260047281323876,
+      "recall": 0.7975077881619937,
+      "f1-score": 0.4387317909168809,
+      "support": 321.0
+    },
+    "obscene": {
+      "precision": 0.7268743914313535,
+      "recall": 0.8705539358600584,
+      "f1-score": 0.7922525868930751,
+      "support": 1715.0
+    },
+    "threat": {
+      "precision": 0.3021978021978022,
+      "recall": 0.7432432432432432,
+      "f1-score": 0.4296875,
+      "support": 74.0
+    },
+    "insult": {
+      "precision": 0.5991397849462365,
+      "recall": 0.8630731102850062,
+      "f1-score": 0.7072861132267073,
+      "support": 1614.0
+    },
+    "identity_hate": {
+      "precision": 0.28969359331476324,
+      "recall": 0.7074829931972789,
+      "f1-score": 0.41106719367588934,
+      "support": 294.0
+    },
+    "micro avg": {
+      "precision": 0.5986815821014783,
+      "recall": 0.8473282442748091,
+      "f1-score": 0.7016270630925904,
+      "support": 7074.0
+    },
+    "macro avg": {
+      "precision": 0.4810954032999783,
+      "recall": 0.8048411557703209,
+      "f1-score": 0.5874687180723811,
+      "support": 7074.0
+    },
+    "weighted avg": {
+      "precision": 0.6295967404683424,
+      "recall": 0.8473282442748091,
+      "f1-score": 0.7171164769844754,
+      "support": 7074.0
+    },
+    "samples avg": {
+      "precision": 0.06383727609796856,
+      "recall": 0.08043344299963442,
+      "f1-score": 0.068236728195995,
+      "support": 7074.0
+    }
+  },
+  "note": "Holdout metrics from a random split; these are not independent external test results. Recorded from a local run of the project author; the dataset and fitted model are not included in the repository."
+}
